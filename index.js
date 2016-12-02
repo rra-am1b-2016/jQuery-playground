@@ -1,9 +1,6 @@
-//alert("Hallo vanuit het js-bestand");
-
+// Check of de pagina geladen is
 $(document).ready(function()
 {
-   // Hier komt al je jQuery
-
    // Dit heet chaining van methods
    $("p").css("background-color", "green")
          .css("border", "5px solid red");
@@ -43,8 +40,4 @@ $(document).ready(function()
       $(this).css({"background-color": "#ffaa11"});
       $("p").css({"border-width": "1em"});
    });
-
-
-
-
 });
