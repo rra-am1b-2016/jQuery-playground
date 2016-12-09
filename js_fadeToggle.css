@@ -2,3 +2,8 @@ img
 {
    display: none;
 }
+
+h3
+{
+   display: inline;
+}

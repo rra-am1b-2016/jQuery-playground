@@ -14,13 +14,16 @@ $(document).ready(function() {
 
    $('span').css(cssPropertiesLink).click(function(){
       //alert("Ik ben een soort button");
-      img.fadeToggle(5000, test);
+      img.fadeToggle(5000, function(){
+                              var h3Tekst = $('h3').eq(1);
+                              if (h3Tekst.text() == " om een mandarijn te zien")
+                                  h3Tekst.text(" om mandarijnen te laten verdwijnen");
+                              else
+                                  h3Tekst.text(" om een mandarijn te zien");
+                        });
 
    });
 
-   function test()
-   {
-      alert("Dit is de functie test");
-   }
+   
 
 });
