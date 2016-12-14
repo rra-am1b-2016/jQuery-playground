@@ -1,0 +1,17 @@
+div
+{
+   width: 200px;
+   height: 200px;
+   background-color: blue;
+   border: 15px solid lawngreen;
+   color: white;
+   font-size: 2em;
+   font-family: "Verdana";
+   margin: 1em;
+   padding: 0.5em;
+}
+
+button
+{
+   padding: 1em;
+}
