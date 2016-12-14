@@ -4,7 +4,7 @@ $(document).ready(function(){
    var img = $('img');
 
    btn.eq(0).click(function(){
-      img.slideUp(4000, function(){
+      img.slideUp(3000, "easeOutBounce", function(){
          btn.eq(0).attr({"disabled": "disabled"})
                   .css({"cursor": "not-allowed", "opacity": "0.6"});
       })
