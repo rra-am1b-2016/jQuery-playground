@@ -9,7 +9,7 @@ $(document).ready(function(){
          else
             transparency = 1;
          $(this).text(transparency);
-          $("button").click();
+         $("button").click();
       });
    });
 });
