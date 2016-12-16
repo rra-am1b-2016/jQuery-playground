@@ -13,8 +13,18 @@ $(document).ready(function(){
    });
 
    $("button").eq(1).click(function(){
-      $("img").attr({"src": "./images/mandarijn.jpg",
-                     "alt": "mandarijn"});
-
+      if ( $("img").attr("alt") == "sla")
+      {
+         $("img").attr({"src": "./images/mandarijn.jpg",
+                        "alt": "mandarijn"});
+         $("button").eq(1).html("Laat de krop <u>sla</u> zien!");
+      }
+      else if ($("img").attr("alt") == "mandarijn")
+      {
+         $("img").attr({"src": "./images/sla.jpg",
+                        "alt": "sla"});
+         $("button").eq(1).html("Laat de <u>mandarijn</u> zien!");
+         
+      }
    });   
 });
