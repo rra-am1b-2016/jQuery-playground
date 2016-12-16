@@ -4,7 +4,9 @@ $(document).ready(function(){
    $('button').click(function(){
       $("div").animate({"left": "60%"}, 3000, "easeInBounce", function(){
          $(this).animate({"top": "200px"}, 3000, "easeInBounce", function(){
-            $(this).animate({"left": "0%"}, 3000, "easeInBounce");       
+            $(this).animate({"left": "0%"}, 3000, "easeInBounce", function(){
+               $(this).animate({"top": "0px", "background-color": "black"}, 3000, "easeInBounce");
+            });       
          });
       });
    });
