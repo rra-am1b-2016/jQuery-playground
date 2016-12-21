@@ -26,7 +26,11 @@ $(document).ready(function(){
 
    $("button").eq(1).click(function(){
       var index = Math.round(Math.random() * 7);
-      $("ol:last li:last").after("<li>" + namesFruit[index] + "</li>");
+      var liNumber = $("input[type=number]").val();
+      var olLength = $("ol:last li").length;
+      $("input[type=number]").attr({"max": olLength + 1});
+      $("ol:last li:nth-child(" + liNumber + ")").after("<li>" + namesFruit[index] + "</li>");
+
    });
 
 });
