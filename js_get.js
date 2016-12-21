@@ -26,5 +26,12 @@ $(document).ready(function(){
          $("button").eq(1).html("Laat de <u>mandarijn</u> zien!");
          
       }
+   });
+
+   $("input").change(function(){
+      var tekst = $(this).val();
+      $("ol").html("<li>" + tekst + "</li>");
+      $(this).val("");
+      $(this).attr("type", "password");
    });   
 });
