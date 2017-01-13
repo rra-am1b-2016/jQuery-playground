@@ -1,0 +1,21 @@
+*
+{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div
+{
+   display: inline-block;
+   width: 700px;
+   /*border: 2px solid black;*/
+}
+
+button
+{
+   display: block;
+}
+
+img
+{
+   height: 380px;
+}
