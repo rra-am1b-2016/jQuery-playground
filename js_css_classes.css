@@ -27,3 +27,8 @@ tr:nth-child(even)
    background-color: peachpuff;
    color: greenyellow;
 }
+
+button
+{
+   margin-left: 1em;
+}
