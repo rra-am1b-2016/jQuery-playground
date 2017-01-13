@@ -5,11 +5,11 @@ $(document).ready(function(){
                          "Eddy Wally", "Vanity 6", "Robert Stigwood", "Glen Frey"];
    */
    var popArtistsDied = [{"name": "David Bowie", "photoName": "David Bowie.jpg"},
-                         {"name": "Prince", "photoName": "David Bowie.jpg"},
-                         {"name": "George Michael", "photoName": "David Bowie.jpg"},
-                         {"name": "Leonard Cohen", "photoName": "David Bowie.jpg"},
-                         {"name": "Toots Thielemans", "photoName": "David Bowie.jpg"},
-                         {"name": "Muhammad Ali", "photoName": "David Bowie.jpg"},
+                         {"name": "Prince", "photoName": "Prince.jpg"},
+                         {"name": "George Michael", "photoName": "george-michael.png"},
+                         {"name": "Leonard Cohen", "photoName": "Leonard Cohen.jpg"},
+                         {"name": "Toots Thielemans", "photoName": "Toots Thielemans.jpg"},
+                         {"name": "Muhammad Ali", "photoName": "Muhammad Ali.jpg"},
                          {"name": "John Berry", "photoName": "David Bowie.jpg"},
                          {"name": "George Martin", "photoName": "David Bowie.jpg"},
                          {"name": "Eddy Wally", "photoName": "David Bowie.jpg"},
@@ -19,7 +19,9 @@ $(document).ready(function(){
 
    $("button").click(function(){
 
+      // Haal alle oude overleden artisten eerst weg
       $("ol").empty();
+
 
       for ( var i = 0; i < 20; i++)
       {
@@ -34,11 +36,13 @@ $(document).ready(function(){
             // Selector maken voor je img tag
             // attr src
             // 
-            var test = popArtistsDied.find(function(){
-               return popArtistsDied.name === $(this).text();
+            artistName = $(this).text();
+
+            var test = popArtistsDied.find(function(artist){
+               return artist.name === artistName;
             });
-            $("img").attr({"src": "./images/" + ,
-                           "alt": $(this).text()});
+            $("img").attr({"src": "./images/" + test.photoName,
+                           "alt": test.name});
 
 
          }).mouseleave(function(){
